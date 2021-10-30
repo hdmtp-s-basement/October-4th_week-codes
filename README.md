@@ -1,11 +1,18 @@
 # October-4th_week-codes
 
-<h3>
-
 6. **30th Oct**
+     
+
      - PRAW( _Python Reddit API Wrapper_ )
        > [Subreddit](https://praw.readthedocs.io/en/latest/code_overview/models/subreddit.html)
        - currently working on [matej2/location-info](https://github.com/matej2/location-info)
+     
+     ```
+     reddit = praw.Reddit(client_id =os.environ.get("id"),
+                     client_secret =os.environ.get("secret"),
+                     user_agent ='my user agent')
 
-  
- </h3>
+     print(reddit.read_only)
+     ```
+    
+ 
