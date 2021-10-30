@@ -8,6 +8,8 @@
        - currently working on [matej2/location-info](https://github.com/matej2/location-info)
      
      ```
+     import praw
+     
      reddit = praw.Reddit(client_id =os.environ.get("id"),
                      client_secret =os.environ.get("secret"),
                      user_agent ='my user agent')
