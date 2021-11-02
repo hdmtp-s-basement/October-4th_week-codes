@@ -12,7 +12,7 @@ reddit = praw.Reddit(client_id =os.environ.get("id"),
 
 print(reddit.read_only)
 
-subreddit = reddit.subreddit('callofduty')
+subreddit = reddit.subreddit('hdmtp645466')
 print(subreddit.display_name)
 print(subreddit.title)
 #print(subreddit.description)
@@ -22,7 +22,7 @@ redditor = reddit.redditor('Fish_Fucker69')
 print(redditor.link_karma)
 '''
 
-for post in reddit.subreddit("memes").hot(limit=5):
+for post in reddit.subreddit("ASUS").hot(limit=5):
 	print(post.title)
 	print("\n")
 
@@ -32,13 +32,20 @@ for collection in reddit.subreddit("IndianDankMemes").collections:
 '''
 
 # glided = awards bought with real moni
-for item in reddit.subreddit("IndianDankMemes").gilded():
+for item in reddit.subreddit("india").gilded():
     print(item.id)
   	
-
+'''
 for wikipage in reddit.subreddit("memes").wiki:
     print(wikipage)
 
 
-wikipage = reddit.subreddit("memes").wiki["config/sidebar"]
+wikipage = reddit.subreddit("memes").wiki["index/banappeals"]
 print(wikipage.content_md)
+'''
+
+submission = reddit.subreddit("indiandankmemes").random()
+print("\n"+submission.title)
+
+for submission in reddit.subreddit("indiandankmemes").random_rising():
+    print(submission.title)
