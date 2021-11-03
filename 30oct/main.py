@@ -8,7 +8,7 @@ load_dotenv(dotenv_path)
 
 reddit = praw.Reddit(client_id =os.environ.get("id"),
                      client_secret =os.environ.get("secret"),
-                     user_agent ='my user agent')
+                     user_agent ='random bullshit go brrrr...')
 
 print(reddit.read_only)
 
