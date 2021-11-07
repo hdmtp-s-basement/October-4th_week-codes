@@ -40,6 +40,7 @@ Day      | Score
 </div>
 <hr>
 <!--Below part needs to be edited-->
+
 Here is a simple footnote[^1].
 
 A footnote can also have multiple lines[^2].  
